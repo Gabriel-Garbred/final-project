@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inder&display=swap');
+*{
+    margin: 0;
+    font-family: "Inder", sans-serif;
+    scroll-behavior: smooth;
+    /* font-family: "Comfortaa", sans-serif; */
+}
+section{
+    position: relative;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#main{
+    background-image: url(img/bgMAIN.png);
+}
+#about{
+    background-image: url(img/bgABOUT.png);
+}
+#skills{
+    background-image: url(img/bgSKILLS.png);
+}
+#works{
+    background-image: url(img/bgWORKS.png);
+}
+#comments{
+    background-image: url(img/bgCOMMENTS.png);
+}
+.main-block, .about-block, .skills-block, .works-block, .comments-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+}
+.main-block{
+    flex-direction: column;
+    height: 100vh;
+}
+.main-content{
+    width: 850px;
+    height: 225px;
+    background-image: url(img/form1.png);
+    background-repeat: no-repeat;
+}
+.main-title{
+    font-size: 60px;
+    color: #2b2b2b;
+    padding-top: 60px;
+    text-align: center;
+}
+.main-subtitle{
+    font-size: 22px;
+    color: #2b2b2b;
+    font-family: "Comfortaa", sans-serif;
+    text-align: center;
+}
+.button{
+    width: 200px;
+    height: 60px;
+    border-radius: 100px;
+    border: 2px #000000 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    box-shadow: 5px 5px #000000;
+    background-color: #bbff2c;
+    transition: all 0.5s;
+}
+.button a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #000000;
+}
+.button:hover{
+    transform: scale(1.1);
+}
+.mooving-planet{
+    background-image: url(img/moving-planet.png);
+    animation-name: planet-moove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 230px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+@keyframes planet-moove{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(70px);
+    }
+}
+.title{
+    padding-top: 100px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+    text-shadow: 5px 5px 0 #000000;
+}
+.about-block{
+    width: 40%;
+    height: 300px;
+    padding: 20px 15px;
+    border-radius: 20px;
+    background-color: #792aff;
+    display: flex;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    min-height: 100px;
+}
+.about-title{
+    color: #ffffffff;
+    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+}
+.about-card{
+    width: 370px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    position: relative;
+}
+.about-card img{
+    width: 240px;
+}
+.about-card p{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "Comfortaa", sans-serif;
+    padding-top: 20px;
+    text-align: center;
+}
+.skills-card{
+    background-image: url(img/form3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 430px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+.skills-card p{
+    font-size: 18px;
+    font-family: "Comfortaa", sans-serif;
+    margin: 30px 0;
+    text-align: center;
+    max-width: 75%;
+}
+.works-block img{
+    width: 30%;
+}
+.works-block{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+.comments-block{
+    max-width: 1300px;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.comments-card{
+    height: 360px;
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(img/card.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    justify-content: flex-start;
+    width: 220px;
+    padding-top: 40px;
+}
+.comments-card img{
+    width: 80%;
+}
+.comments-card h3,.comments-card p{
+    font-family: "Comfortaa", sans-serif;
+    padding: 5px 0;
+    text-align: center;
+}
+.comment{
+    background-image: url(img/comment.png);
+    width: 328px;
+    height: 162px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 4px 4px 1px #bbff2c;
+    border-radius: 14px;
+}
+.comment p{
+    max-width: 250px;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 20px;
+}
+footer{
+    background-color: #200153;
+    height: 110px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffffff;
+}
+.footer-info p{
+    font-family: "Comfortaa", sans-serif;
+    padding-bottom: 10px;
+}
+.footer-year p{
+    font-family: "Comfortaa", sans-serif;
+    letter-spacing: 1.5px;
+}
+.footer-links a{
+    margin-right: 15px;
+}
+nav{
+position: fixed;
+width: 100%;
+top:0;
+z-index: 10;
+}
+.fixed-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.nav-link{
+    width: 130px;
+    height: 40px;
+    border-radius: 12px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+    font-family: "Comfortaa", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s;
+}
+.logo{
+    color: #bbff2c;
+    font-size: 60px;
+}
+.nav-link:hover{
+    transform: scale(1.1);
+}
+.active{
+    background-color: #bbff2c;
+    transform: translateY(8px);
+}
+.hide{
+    display: none;
+}
+.mobile-btn{
+    display: none;
+    padding-top: 10px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+}
+@media (max-width:1000px){
+    .fixed-menu{
+        width: 100%;
+    }
+    .mobile-btn{
+        display: block;
+    }
+    .mobile-nav-links{
+        position: absolute;
+        top: 0;
+        z-index: -1;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #200153;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hide{
+        display: none;
+    }
+    .nav-links{
+        display: none;
+    }    
+    .logo{
+        font-size: 40px;
+        padding-left: 10%;
+    }
+    .main-block img{
+        display: none;
+    }
+    .main-content{
+        width: 450px;
+    }
+    .main-title{
+        font-size: 35px;
+        padding-top: 60px;
+    }
+    .main-subtitle{
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    .mooving-planet{
+        display: none;
+    }
+    .title{
+        font-size: 44px;
+    }
+    .button{
+        width: 150px;
+        height: 40px;
+        border-radius: 75px;
+    }
+    .about-block{
+        flex-direction: column;
+        margin-top: 20px;
+        height: auto;
+        max-height: auto;
+        max-width: auto;
+        width: 320px;
+        padding: 20px 10px;
+    }
+    .about-card{
+        order:-1;
+        height: auto;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .about-text{
+        margin: auto;
+        text-align: center;
+    }
+    .about-text .button{
+        margin: auto;
+        margin-top: 5px;
+    }
+    .skills-card{
+        width: 60%;
+    }
+    .skills-card .button{
+        width: 200px;
+    }
+    .works-block{
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .works-block img{
+        width: 50%;
+        margin-top: 20px;
+    }
+    .title{
+        padding-top: 3px;
+    }
+    #works{
+        height: auto;
+    }
+    .comments-block{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .comment{
+        background-image: url(img/comment-mobile.png);
+        background-repeat: no-repeat;
+        width: 340px;
+        height: 80px;
+        margin-top: 5px;
+        margin: 15px 0;
+    }
+    .comment p{
+        font-size: 16px;
+        max-width: 90%;
+    }
+    .comments-card{
+        height: 280px;
+    }
+    .off-scroll{
+        overflow: hidden;
+    }
+}
